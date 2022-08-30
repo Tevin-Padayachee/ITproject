@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+ img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+    .box{
+        width: 250px;        
+        border: 5px solid black;
+    }    
+    .box.large{
+        height: 300px;
+    }
+    .box.small{
+        height: 100px;
+    }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+{
+  font-family: "Lato", sans-serif;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+br {
+   display: block;
+   margin: 10px 0;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+  <center>
+<img src="https://itproject123.w3spaces.com/Company_name_1.jpg" alt="Company logo" width="750" height="170">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.w3spaces-preview.com/itproject123/TandSInternetSolutions.html">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="https://www.w3spaces-preview.com/itproject123/login.html#">Login</a>
+  <a href="#">Contact Us</a>
+</div>
+<hr>
+<div id="main">
+  <span style="font-size:25px;cursor:pointer;vertically-align: -20px;" onclick="openNav()"> "<p style="color:red;"> MENU</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <hr>
+      <h3 class="animate-charcter"> <center> Welcome to T&S Internet Solutions Where We bring the internet to you</h3>
+   <hr>
+   <h3 class="animate-charcter"> <center> Our Services</h3>
+    </div>
+  </div>
+</div>
+<img src="https://itproject123.w3spaces.com/fiber-optic-internet.jpg" alt="Company logo"  width="750" height="400">
+<p style="color:blue;font-size:40px;">
+
+ Fiber Optics
+  </p>   
+  <p style="color:blue;font-size:40px;">
+ If your area has fiber coverage we do fiber installations free of charge!
+ </p>
+
+ <p style="color:blue;font-size:40px;">
+  
+   </p>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send/?phone=27662892741&text&type=phone_number&app_absent=0" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+</body>
+</html>
